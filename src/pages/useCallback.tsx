@@ -1,11 +1,11 @@
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
-
-export default function Home() {
+export default function useCallbackPage() {
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-    ></main>
+    <div>
+      <h1>useCallback Example</h1>
+      <input type="text" />
+      <button>Click Me</button>
+      <button>Increment Count</button>
+      <p>Button clicked 0 times</p>
+    </div>
   );
 }
